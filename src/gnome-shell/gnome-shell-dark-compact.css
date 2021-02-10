@@ -23,8 +23,8 @@
 }
 
 stage {
-  font-size: 9.75pt;
-  font-weight: 400;
+  font-size: 11pt;
+  font-weight: bold;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -208,7 +208,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 /* Slider */
 .slider {
   height: 20px;
-  color: white;
+  color: #408aeb;
   -slider-height: 2px;
   -slider-background-color: rgba(255, 255, 255, 0.1);
   -slider-border-color: transparent;
@@ -1371,12 +1371,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #panel {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   transition-duration: 250ms;
   font-weight: bold;
-  height: 34px;
-  border-radius: 9999px;
-  margin: 2px;
+  height: 26px;
+  border-radius: 0px;
+  /*margin: 2px;*/
 }
 
 #panel:overview, #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
@@ -1394,8 +1394,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #panel .panel-corner {
-  -panel-corner-radius: 0;
-  -panel-corner-background-color: rgba(0, 0, 0, 0.5);
+  -panel-corner-radius: 6px;  /*cantos arredondados*/
+  -panel-corner-background-color: black;
   -panel-corner-border-width: 0;
   -panel-corner-border-color: transparent;
 }
@@ -1415,9 +1415,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #panel .panel-button {
-  margin: 4px 6px;
-  -natural-hpadding: 2px;
-  -minimum-hpadding: 2px;
+  /*margin: 4px 6px;*/
+  /*espaçamento entre icones*/
+  -natural-hpadding: 6px;
+  -minimum-hpadding: 6px;
   font-weight: bold;
   color: #dedede;
   text-shadow: none;
@@ -1434,10 +1435,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   height: 0;
 }
 
+/*margem entre elementos*/
 #panel .panel-button .app-menu-icon {
   -st-icon-style: symbolic;
   margin-left: 4px;
-  margin-right: 0;
+  margin-right: 4px;
 }
 
 #panel .panel-button .system-status-icon,
@@ -1472,6 +1474,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #panel .panel-button .system-status-icon {
+  font-size: 9.5pt;    /*tamanho dos icones*/
   icon-size: 1.2307692308em;
   padding: 0 3px;
 }
@@ -1493,9 +1496,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   box-shadow: none;
 }
 
+/*espaço dos icones do menu do sistema*/
 #panel .panel-status-indicators-box,
 #panel .panel-status-menu-box {
-  spacing: 2px;
+  spacing: 6px;
 }
 
 #panel .power-status.panel-status-indicators-box {
@@ -2438,11 +2442,11 @@ Gjs_ui_panel_ActivitiesButton.panel-button:active, Gjs_ui_panel_ActivitiesButton
   padding: 3px 0;
   margin: 6px;
   border: none;
-  border-radius: 100px;
+  border-radius: 22px;
 }
 
 #dash:rtl {
-  border-radius: 100px;
+  border-radius: 22px;
 }
 
 #dash .placeholder {
@@ -2458,7 +2462,7 @@ Gjs_ui_panel_ActivitiesButton.panel-button:active, Gjs_ui_panel_ActivitiesButton
 
 #dash .show-apps .overview-icon,
 #dash .app-well-app .overview-icon {
-  border-radius: 9999px;
+  border-radius: 20px;
 }
 
 .dash-item-container > StWidget {
